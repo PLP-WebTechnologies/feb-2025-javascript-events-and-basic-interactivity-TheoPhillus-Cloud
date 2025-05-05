@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dynamic Webpage with JavaScript</h1>
+
+    <!-- Button with Hover and Click Effects -->
+    <button id="changeButton">Click or Hover Me!</button>
+
+    <!-- Modal -->
+    <button id="openModal">Open Modal</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <p>Welcome to the interactive modal!</p>
+        </div>
+    </div>
+
+    <!-- Form Validation -->
+    <form id="myForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        
+        <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+
+    <!-- Slider -->
+    <label for="slider">Adjust Value:</label>
+    <input type="range" id="slider" min="1" max="100">
+    <span id="sliderValue">50</span>
+
+    <!-- Image Gallery -->
+    <div id="gallery">
+        <img src="Images\pexels-googledeepmind-18069695.jpg" class="gallery-image">
+        <img src="Images\pexels-goumbik-574069.jpg" class="gallery-image" style="display: none;">
+        <img src="Images\pexels-luis-gomes-166706-546819.jpg" class="gallery-image" style="display: none;">
+    </div>
+    <button id="nextImage">Next Image</button>
+
+    <!-- Tabbed Content -->
+    <div class="tab">
+        <button class="tab-button" data-tab="tab1">Tab 1</button>
+        <button class="tab-button" data-tab="tab2">Tab 2</button>
+    </div>
+    <div id="tab1" class="tab-content">Content for Tab 1</div>
+    <div id="tab2" class="tab-content" style="display: none;">Content for Tab 2</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
